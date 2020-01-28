@@ -8,10 +8,11 @@ set max_args 5
 set outdir "./results"
 set plugindir "./plugins"
 set port_list 80 443
+set seclistdir "$HOME/SecLists"
 
 # ===== functions =====
 function usage
-	echo "Usage:" (status filename) "<target name or IP>" "-o <optional results dir>" "-P <optional plugin directory>" "-p <optional port>"
+	echo "Usage:" (status filename) "<target name or IP>" "-o <optional results dir>" "-P <optional plugin directory>" "-p <optional port>" "-w <optional SecListsDir>"
 end
 
 # ===== entry point =====
