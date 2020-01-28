@@ -1,0 +1,6 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: google.com
++ Target Port: 80
++ GET /: Uncommon header 'x-xss-protection' found, with contents: 0
++ GET /: Uncommon header 'x-frame-options' found, with contents: SAMEORIGIN
++ GET /kKT2lX3a.passwd: Uncommon header 'referrer-policy' found, with contents: no-referrer

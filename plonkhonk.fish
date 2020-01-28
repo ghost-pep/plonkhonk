@@ -1,4 +1,4 @@
-#!/usr/local/bin/fish
+#!/usr/bin/env fish
 #
 # A fish shell script to automate web application penetration testing
 # Author: Daniel Pagan
