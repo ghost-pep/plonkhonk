@@ -75,7 +75,9 @@ end
 
 # loop through the plugin directory and run the scans
 for plugin in $plugindir/*.fish
+	set_color green
 	echo Plugin: $plugin
+	set_color normal
 	source $plugin
 	# plugins have target, ip, outdir, plugindir, port_list
 end
