@@ -8,7 +8,7 @@ echo "Running nikto scan plugin"
 echo ===========================
 
 # check for nikto
-if which nikto
+if not which nikto > /dev/null 2>&1
 	echo "Error: nikto is either not installed or in the path"
 end
 
@@ -17,4 +17,4 @@ for port in $port_list
 	nikto -host $target -port $port -output $outdir/nikto-$port.txt
 end
 
-echo ===== nikto scan plugin ======
+echo ===== nikto scan complete ======

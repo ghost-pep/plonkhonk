@@ -7,7 +7,7 @@
 set max_args 5
 set outdir "./results"
 set plugindir "./plugins"
-set port_list 80 443
+set port_list 80
 set seclistdir "$HOME/SecLists"
 
 # ===== functions =====
