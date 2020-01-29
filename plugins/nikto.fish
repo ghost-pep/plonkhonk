@@ -10,11 +10,11 @@ echo ===========================
 # check for nikto
 if not which nikto > /dev/null 2>&1
 	echo "Error: nikto is either not installed or in the path"
-end
-
-for port in $port_list
-	echo "nikto -host $target -port $port -output $outdir/nikto-$port.txt"
-	nikto -host $target -port $port -output $outdir/nikto-$port.txt
+else
+	for port in $port_list
+		echo "nikto -host $target -port $port -output $outdir/nikto-$port.txt"
+		nikto -host $target -port $port -output $outdir/nikto-$port.txt
+	end
 end
 
 echo ===== nikto scan complete ======
