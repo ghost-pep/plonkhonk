@@ -56,9 +56,9 @@ fn main() {
         .collect();
     paths.par_iter().for_each(|path| {
         println!("Running {:?}", path);
-        Command::new("fish")
-            .arg("-c")
-            .arg(format!("echo {}", path))
+        Command::new("./launcher.fish")
+            .arg(format!("{}", matches.value_of("target").unwrap()))
+            .arg(format!("{}", path))
             .status()
             .expect("Failed to execute plugin");
     })
